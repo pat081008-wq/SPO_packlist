@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Adventures of S&amp;P&amp;O</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ── Hero header with line-art illustration ── -->
+  <div class="hero">
+    <svg class="hero-svg" viewBox="0 0 480 175" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="480" height="175" fill="#ede5d4"/>
+
+      <!-- Concentric sun arcs -->
+      <path d="M80 175 A100 100 0 0 1 260 85" stroke="#c45c3a" stroke-width="1.3" fill="none" opacity="0.30"/>
+      <path d="M65 175 A118 118 0 0 1 268 72" stroke="#c45c3a" stroke-width="1.3" fill="none" opacity="0.35"/>
+      <path d="M48 175 A138 138 0 0 1 276 57" stroke="#c45c3a" stroke-width="1.3" fill="none" opacity="0.40"/>
+      <path d="M30 175 A158 158 0 0 1 285 42" stroke="#c45c3a" stroke-width="1.3" fill="none" opacity="0.30"/>
+      <path d="M10 175 A180 180 0 0 1 293 25" stroke="#c45c3a" stroke-width="1.2" fill="none" opacity="0.22"/>
+
+      <!-- Sun rays -->
+      <line x1="132" y1="88"  x2="108" y2="52"  stroke="#c45c3a" stroke-width="1.5" opacity="0.50"/>
+      <line x1="148" y1="80"  x2="138" y2="44"  stroke="#c45c3a" stroke-width="1.5" opacity="0.50"/>
+      <line x1="163" y1="76"  x2="162" y2="38"  stroke="#c45c3a" stroke-width="1.5" opacity="0.50"/>
+      <line x1="112" y1="100" x2="82"  y2="76"  stroke="#c45c3a" stroke-width="1.5" opacity="0.45"/>
+      <line x1="102" y1="118" x2="68"  y2="105" stroke="#c45c3a" stroke-width="1.5" opacity="0.40"/>
+
+      <!-- Sun -->
+      <circle cx="148" cy="100" r="26" fill="#f0a830" opacity="0.88"/>
+      <circle cx="148" cy="100" r="26" stroke="#d49020" stroke-width="1.2" fill="none"/>
+
+      <!-- Background mountain with snow -->
+      <path d="M295 165 L370 42 L445 165" stroke="#2c2416" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+      <path d="M370 42 L356 72 L370 66 L384 72 Z" fill="rgba(245,240,232,0.75)" stroke="#2c2416" stroke-width="1.1" stroke-linejoin="round"/>
+      <circle cx="364" cy="55" r="1.5" fill="#2c2416" opacity="0.35"/>
+      <circle cx="375" cy="60" r="1.5" fill="#2c2416" opacity="0.35"/>
+      <circle cx="370" cy="50" r="1"   fill="#2c2416" opacity="0.35"/>
+
+      <!-- Front ridge -->
+      <path d="M140 175 L210 72 L255 110 L280 165" stroke="#2c2416" stroke-width="1.8" fill="none" stroke-linejoin="round"/>
+
+      <!-- Ground lines -->
+      <path d="M0 148 Q80 142 160 148 Q240 154 320 146 Q400 140 480 144" stroke="#2c2416" stroke-width="1.4" fill="none" opacity="0.60"/>
+      <path d="M0 162 Q120 155 240 160 Q360 165 480 158" stroke="#2c2416" stroke-width="1.0" fill="none" opacity="0.30"/>
+
+      <!-- Pine trees — left group -->
+      <g opacity="0.80">
+        <line x1="22" y1="170" x2="22" y2="130" stroke="#2c2416" stroke-width="1.3"/>
+        <path d="M9  143 L22 122 L35 143 Z" stroke="#2c2416" stroke-width="1.2" fill="none"/>
+        <path d="M12 134 L22 115 L32 134 Z" stroke="#2c2416" stroke-width="1.2" fill="none"/>
+      </g>
+      <g opacity="0.65">
+        <line x1="52" y1="170" x2="52" y2="136" stroke="#2c2416" stroke-width="1.2"/>
+        <path d="M41 150 L52 130 L63 150 Z" stroke="#2c2416" stroke-width="1.1" fill="none"/>
+        <path d="M44 141 L52 123 L60 141 Z" stroke="#2c2416" stroke-width="1.1" fill="none"/>
+      </g>
+      <g opacity="0.55">
+        <line x1="76" y1="170" x2="76" y2="142" stroke="#2c2416" stroke-width="1.1"/>
+        <path d="M67 154 L76 136 L85 154 Z" stroke="#2c2416" stroke-width="1.0" fill="none"/>
+        <path d="M69 145 L76 129 L83 145 Z" stroke="#2c2416" stroke-width="1.0" fill="none"/>
+      </g>
+
+      <!-- Pine trees — right group -->
+      <g opacity="0.82">
+        <line x1="418" y1="170" x2="418" y2="125" stroke="#2c2416" stroke-width="1.3"/>
+        <path d="M404 142 L418 118 L432 142 Z" stroke="#2c2416" stroke-width="1.2" fill="none"/>
+        <path d="M408 130 L418 108 L428 130 Z" stroke="#2c2416" stroke-width="1.2" fill="none"/>
+      </g>
+      <g opacity="0.65">
+        <line x1="450" y1="170" x2="450" y2="132" stroke="#2c2416" stroke-width="1.2"/>
+        <path d="M438 148 L450 126 L462 148 Z" stroke="#2c2416" stroke-width="1.1" fill="none"/>
+        <path d="M441 137 L450 116 L459 137 Z" stroke="#2c2416" stroke-width="1.1" fill="none"/>
+      </g>
+      <g opacity="0.50">
+        <line x1="474" y1="170" x2="474" y2="142" stroke="#2c2416" stroke-width="1.1"/>
+        <path d="M465 154 L474 135 L483 154 Z" stroke="#2c2416" stroke-width="1.0" fill="none"/>
+      </g>
+
+      <!-- Birds in flight -->
+      <path d="M330 80 Q335 75 340 80" stroke="#2c2416" stroke-width="1.5" fill="none"/>
+      <path d="M345 88 Q350 83 355 88" stroke="#2c2416" stroke-width="1.5" fill="none"/>
+      <path d="M337 96 Q342 91 347 96" stroke="#2c2416" stroke-width="1.5" fill="none"/>
+
+      <!-- Winding path -->
+      <path d="M310 170 Q345 162 370 155 Q400 148 430 152" stroke="#2c2416" stroke-width="1.2" fill="none" opacity="0.45"/>
+
+      <!-- Rock -->
+      <ellipse cx="352" cy="156" rx="13" ry="7" stroke="#2c2416" stroke-width="1.1" fill="none" opacity="0.45"/>
+    </svg>
+
+    <div class="hero-text">
+      <div class="app-title">Adventures of S&amp;P&amp;O</div>
+      <div class="app-sub">Holiday Packing Tracker</div>
+    </div>
+  </div>
+
+  <!-- ── Global progress bar ── -->
+  <div class="progress-section">
+    <div class="progress-row">
+      <span class="progress-label" id="globalLabel">0 of 0 packed</span>
+      <div class="progress-track">
+        <div class="progress-fill" id="globalFill" style="width: 0%"></div>
+      </div>
+      <span class="progress-pct" id="globalPct">0%</span>
+    </div>
+  </div>
+
+  <!-- ── Tab navigation ── -->
+  <div class="tabs-wrapper">
+    <div class="tabs" id="tabBar"></div>
+  </div>
+  <div class="divider"></div>
+
+  <!-- ── Tab content (rendered by app.js) ── -->
+  <div id="tabContent"></div>
+
+</div>
+
+<!-- Data must load before app logic -->
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
