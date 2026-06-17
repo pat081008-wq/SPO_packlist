@@ -88,8 +88,9 @@ const packingData = [
       { name: "Chickens",              qty: "3" },
       { name: "Angel Care Monitor",    qty: "1" },
       { name: "Wireless Monitor",      qty: "1" },
-      { name: "Bassinette",            qty: "—" },
-      { name: "Pram",                  qty: "—" },
+      { name: "Bassinette",            qty: "1" },
+      { name: "Pram",                  qty: "1" },
+      { name: "Heater",                qty: "1" },
     ]
   },
   {
@@ -118,6 +119,7 @@ const packingData = [
       { name: "Cell phone Charger",    qty: "1" },
       { name: "Sanitiser",             qty: "1" },
       { name: "Hand Wash",             qty: "1" },
+      { name: "Gloves",                qty: "1" },
     ]
   },
   {
